@@ -26,10 +26,13 @@ public class BanWordsCommand extends BukkitCommand {
         }
         if (args[0].equalsIgnoreCase("add")) {
             addBanWord(sender, args);
+            return true;
         }
         if (args[0].equalsIgnoreCase("remove")) {
             rmBanWord(sender, args);
+            return true;
         }
+        sender.sendMessage(ChatColor.RED + "Usage: /banwords + <add> | <remove> | <list> + [mot à bannir]");
         return true;
     }
 
