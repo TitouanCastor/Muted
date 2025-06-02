@@ -1,0 +1,5 @@
+name: Muted
+version: '1.0-SNAPSHOT'
+main: muted.muted.Muted
+author: Castor
+api-version: '1.21'
